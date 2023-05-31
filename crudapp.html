@@ -4,76 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="./crudapp.css">
     <title>Crudapp</title>
+    <link rel="stylesheet" href="./crudapp.css">
 </head>
 <body>
-    <div class="container1">
-        <div id="header">
-            <h2 class="text-white">Crud Application</h2>
+    <div class="container">
+        <div class="header">
+            <h2 class="header-title">Crud Application</h2>
         </div>
-        <hr class="text-white">
-        <form id="form">
-            <div class="form-group mb-2">
-                <label for="name" class="text-white mb-1" id="fname">İsminiz</label>
-                <input type="text" id="name" class="form-control">
+        <hr class="hr">
+        <form class="form">
+            <div class="form--group">
+                <label for="name" class="form--label">İsminiz</label>
+                <input type="text" class="form--input form--name">
             </div>
-            <div class="form-group mb-2">
-                <label for="surname" class="text-white mb-1" id="fsurname">Soyisminiz</label>
-                <input type="text" id="surname" class="form-control">
+            <div class="form--group">
+                <label for="surname" class="form--label">Soy İsminiz</label>
+                <input type="text" class="form--input  form--surname">
             </div>
-            <div class="form-group mb-2">
-                <label for="city" class="text-white mb-1" id="fcity">Yaşadığınız Şehir</label>
-                <input type="text" id="city" class="form-control">
+            <div class=" form--group">
+                <label for="city" class="form--label">Yaşadığınız Şehir</label>
+                <input type="text" class="form--input form--city">
             </div>
-            <div class="form-group mb-2">
-                <label for="tel" class="text-white mb-1" id="fcity">Telofon Numarası</label>
-                <input type="tel" id="tel" class="form-control">
+            <div class="form--group">
+                <label for="tel" class="form--label">Telefon Numarası</label>
+                <input type="tel" class="form--input form--tel">
             </div>
-            <button class="btn btn-primary mt-1" id="save">Kaydet</button>
+            <button class="form--button" id="save">Kaydet</button>
         </form>
     </div>
    
-    <div class="col-8 container mt-3" id="table1">
-        <table class="table table-striped table-dark">
+    <div class="container">
+        <table class="table">
             <thead>
-                <th>İsim</th>
-                <th>Soyisim</th>
-                <th>Şehir</th>
-                <th>Telefon Numarası</th>
-                <th></th>
-            </thead>
-            <tbody id="list">
                 <tr>
-                    <td class="pl-4"></td>
+                    <th>İsim</th>
+                    <th>Soy İsim</th>
+                    <th>Şehir</th>
+                    <th>Telefon Numarası</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="list">
+                <tr>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td>
-                        
-                    </td>                
+                    <td></td>               
+                    <td></td>               
                 </tr>
             </tbody>
         </table>
     </div>
 
-
-
-
-
-
-
     <script src="crudapp.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
 </body>
 </html>
+
+                    

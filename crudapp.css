@@ -1,33 +1,131 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(34, 32, 32);
-    display: flex;
-    flex-direction: column;
-}
-.container1{
-    display: flex;
-    flex-direction: column;
+    background: rgb(48, 46, 46);
 }
 
-#header{
-    margin-left: auto;
-    margin-right: auto; 
-}
-#header h2{
-    font-weight: 600;
-    font-size: 45px;
+.container {
+    margin: 0 auto;
+    max-width: 60%;
+    height: 100%;
+
 }
 
-#form{
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-title {
+    color: white;
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+.hr {
+    border-color: white;
+    width: 65%;
+}
+
+.form {
+    width: 65%;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
-    width: 55%;
-}
-#save{
-    width: 100px;
 }
 
+.form--group {
+    margin-bottom: 10px;
+}
+
+.form--label {
+    color: white;
+    margin-bottom: 5px;
+    font-size: large;
+    display: block;
+}
+
+.form--input {
+    width: 100%;
+    padding: 5px;
+    font-size: large;
+    color: rgb(39, 39, 39);
+}
+
+.form--button {
+    background-color: rgb(37, 204, 37);
+    color: #fff;
+    border: none;
+    border-radius: 8%;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.form--button:hover{
+    background: rgb(9, 194, 9);
+    transition: 0.5s;
+}
 
 
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
 
+.table th,
+.table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background: #4b4747;
+    border: 1px solid black;
+}
+
+
+.table th {
+    background-color: #111111;
+    color: #fff;
+}
+
+.alert {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: #c3e6cb;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.delete {
+    background-color: red;
+    color: black;
+    padding: 2px;
+    border-radius: 5%;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.delete:hover {
+    background-color: rgb(192, 8, 8)
+}
+
+.edit{
+    background-color: rgb(243, 243, 42);
+    color: black;
+    padding: 2px;
+    border-radius: 5%;
+    text-decoration: none;
+}
+.edit:hover{
+    background: yellow;
+}
